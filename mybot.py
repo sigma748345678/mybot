@@ -11,7 +11,7 @@ person = {"hello": "Hi!", #slovari vsegda v peremenoy
 "poka": "pokakayesh doma" #slovar dla bota sam bot nize
 }
 while True:  #beskonechni cikl
-    a = input("you:").lower() #lover dla togo chtobi koda bila tak: HELLO to ono otvechalo
+    a = input("you:").lower().strip() #lover dla togo chtobi koda bila tak: HELLO to ono otvechalo
     if a in person: #chem gushe les if else if else
         print("bot:", person[a]) #vivod
     elif a == '`': # eto na exit
