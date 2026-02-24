@@ -17,7 +17,7 @@ while True:  #beskonechni cikl
     if a in person: #chem gushe les if else if else
         print("bot:", person[a]) #vivod
     elif a == "-":
-        g = input("shutdown: yes/no").lower().strip() 
+        g = input("shutdown: yes/no").lower().strip()
         if g == "yes":
             os.system("shutdown /s") #virubanie pc
             time.sleep(5)
@@ -27,4 +27,4 @@ while True:  #beskonechni cikl
         break #break eto tipo konec tipo liv
     else:
         print("???") #bot ne znaet
-# ya iz budushego ispravi eto govno pls
+# bot made elly5654 (ellychandr5654@gmail.com) (elly5654tt@gmail.com)
