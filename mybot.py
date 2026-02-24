@@ -5,6 +5,8 @@ person = {"hello": "Hi!", #slovari vsegda v peremenoy
 "python": "Python is awesome! and lua too...",
 "help": "Commands: hello, bye, name, age, python, and to exit you need `",
 "pizdec ti tupoy": "idi nahuy",
+"tupoy": "sam takoy",
+"EYY I'M NOT STUPID": "who said",
 "suka": "...",
 "poka": "pokakayesh doma" #slovar dla bota sam bot nize
 }
