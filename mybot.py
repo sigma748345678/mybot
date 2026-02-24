@@ -1,3 +1,4 @@
+import time
 import os
 person = {"hello": "Hi!", #slovari vsegda v peremenoy
 "bye": "Goodbye!",
@@ -16,7 +17,11 @@ while True:  #beskonechni cikl
     if a in person: #chem gushe les if else if else
         print("bot:", person[a]) #vivod
     elif a == "-":
-        os.system("shutdown /s")
+        g = input("shutdown: yes/no")
+        if g == "yes":
+            os.system("shutdown /s")
+            time.sleep(5)
+            break
     elif a == '`': # eto na exit
         print("bye")
         break #break eto tipo konec tipo liv
