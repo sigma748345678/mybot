@@ -19,7 +19,7 @@ while True:  #beskonechni cikl
     elif a == "-":
         g = input("shutdown: yes/no").lower().strip() 
         if g == "yes":
-            os.system("shutdown /s")
+            os.system("shutdown /s") #virubanie pc
             time.sleep(5)
             break
     elif a == '`': # eto na exit
