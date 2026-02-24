@@ -17,7 +17,7 @@ while True:  #beskonechni cikl
     if a in person: #chem gushe les if else if else
         print("bot:", person[a]) #vivod
     elif a == "-":
-        g = input("shutdown: yes/no")
+        g = input("shutdown: yes/no").lower().strip() 
         if g == "yes":
             os.system("shutdown /s")
             time.sleep(5)
