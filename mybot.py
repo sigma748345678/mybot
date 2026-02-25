@@ -22,6 +22,14 @@ while True:  #beskonechni cikl
             os.system("shutdown /s") #virubanie pc
             time.sleep(5)
             break
+    elif a == "timer":
+        kot = int(input("secunds:"))
+        while True:
+            time.sleep(1)
+            kot -= 1
+            print(kot)
+            if kot == 0:
+                break
     elif a == '`': # eto na exit
         print("bye")
         break #break eto tipo konec tipo liv
