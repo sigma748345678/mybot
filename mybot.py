@@ -5,7 +5,7 @@ person = {"hello": "Hi!", #slovari vsegda v peremenoy
 "name": "My name is EllyBot",
 "age": "I am 0 years old",
 "python": "Python is awesome! and lua too...",
-"help": "Commands: hello, bye, name, age, python, and to exit you need ` , and - this is shutdown pc",
+"help": "Commands: hello, bye, name, age, python, and to exit you need ` , and - this is shutdown pc, timer = timer",
 "pizdec ti tupoy": "idi nahuy",
 "tupoy": "sam takoy",
 "EYY I'M NOT STUPID": "who said",
@@ -29,6 +29,7 @@ while True:  #beskonechni cikl
             kot -= 1
             print(kot)
             if kot == 0:
+                print('this end')
                 break
     elif a == '`': # eto na exit
         print("bye")
