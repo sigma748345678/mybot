@@ -37,7 +37,7 @@ person = {
     "fun": "Fun is coding!",
     "bored": "I can tell you a joke!",
     "confused": "Don't worry, I understand!",
-    "stupid": "Everyone learns at their own pace.",
+    "very stupid": "Everyone learns at their own pace.",
     "smart": "Thanks!",
     "yes please": "As you wish!",
     "no thanks": "No problem!",
@@ -61,6 +61,9 @@ while True:  #beskonechni cikl
             os.system("shutdown /s") #virubanie pc
             time.sleep(5)
             break
+    elif a == "stupid":
+        print("no you stupid")
+        break
     elif a == "time":
         concurrent_time = time.strftime("%H:%M:%S")
         print(concurrent_time)
