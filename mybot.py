@@ -1,3 +1,4 @@
+import webbrowser
 import time
 import os
 person = {
@@ -10,7 +11,7 @@ person = {
     "age": "I am 0 years old",
     "python": "Python is awesome!",
     "lua": "Lua is cool too!",
-    "help": "Commands: hello, hi, bye, name, age, python, lua, joke, timer, shutdown",
+    "help": "Commands: hello, hi, bye, name, age, python, lua, joke, timer, shutdown, youtube = open youtube",
     "joke": "Why did the programmer quit his job? Because he didn't get arrays!",
     "funny": "I love to laugh!",
     "sad": "Don't be sad, cheer up!",
@@ -61,6 +62,10 @@ while True:  #beskonechni cikl
             os.system("shutdown /s") #virubanie pc
             time.sleep(5)
             break
+    elif a == "google":
+        bober555 = input("your link (http://youtube.com): ").lower().strip()
+        webbrowser.open_new_tab(bober555)
+
     elif a == "stupid":
         print("no you stupid")
         break
@@ -82,6 +87,8 @@ while True:  #beskonechni cikl
             if kot == 0:
                 print('this end')
                 break
+    elif a == "youtube":
+        webbrowser.open("https://youtube.com")
     elif a == '`': # eto na exit
         print("bye")
         break #break eto tipo konec tipo liv
