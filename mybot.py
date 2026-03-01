@@ -1,3 +1,4 @@
+import wikipedia
 import webbrowser
 import time
 import os
@@ -87,6 +88,10 @@ while True:  #beskonechni cikl
             if kot == 0:
                 print('this end')
                 break
+    elif a == "wikipedia":
+        ofdo = input("Wikipedia:")
+        result = wikipedia.search(ofdo)
+        print(result)
     elif a == "youtube":
         webbrowser.open("https://youtube.com")
     elif a == '`': # eto na exit
