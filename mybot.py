@@ -53,8 +53,9 @@ person = {
     "random": "I can do random stuff!",
     "secret": "I know a secret..."
 }
+bobefd = input("enter your nick (pls enter ':' in end nick): ").strip()
 while True:  #beskonechni cikl
-    a = input("you:").lower().strip() #lover dla togo chtobi koda bila tak: HELLO to ono otvechalo a string che bi kogda bili probeli toze otvechal
+    a = input(bobefd).lower().strip() #lover dla togo chtobi koda bila tak: HELLO to ono otvechalo a string che bi kogda bili probeli toze otvechal
     if a in person: #chem gushe les if else if else
         print("bot:", person[a]) #vivod
     elif a == "-":
@@ -89,7 +90,7 @@ while True:  #beskonechni cikl
                 print('this end')
                 break
     elif a == "wikipedia":
-        ofdo = input("Wikipedia:")
+        ofdo = input("Wikipedia:").lower().strip()
         result = wikipedia.search(ofdo)
         print(result)
     elif a == "youtube":
