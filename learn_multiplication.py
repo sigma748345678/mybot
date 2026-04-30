@@ -12,6 +12,7 @@ def mult():
     score = 0
     trys = 0
     cheating = 0
+    wwww = 0
     while trys < 5:
         print(Style.RESET_ALL)
         random_multiplication1 = randint(1, 10)
@@ -41,7 +42,14 @@ def mult():
             print(Fore.RED + "wait...")
             time.sleep(3)
             print(Fore.RED + "this cheating..")
-            time.sleep(6)
+            print(Style.RESET_ALL)
+            time.sleep(3)
+            while wwww < 10:
+                wwww += 1
+                time.sleep(0.2)
+                err = randint(10000000000000, 10000000000000000000)
+                print(err)
+            time.sleep(4)
             print(Fore.MAGENTA + "RELOADING")
             print(Style.RESET_ALL)
             time.sleep(3)
