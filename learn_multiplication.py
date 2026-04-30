@@ -87,7 +87,7 @@ def sub():
         random_sub1 = randint(1, 10)
         random_sub2 = randint(1, 10)
         if random_sub1 < random_sub2:
-            random_sub1, random_div2 = random_sub1, random_sub2
+            random_sub1, random_div2 = random_sub2, random_sub1
         true_answer = random_sub1 - random_sub2
         time.sleep(1)
         print("what is", random_sub1, "-", random_sub2)
