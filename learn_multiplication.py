@@ -1,4 +1,3 @@
-import random
 import time
 from colorama import Fore, Style
 from random import randint
@@ -12,6 +11,7 @@ math_advice = """
 def mult():
     score = 0
     trys = 0
+    cheating = 0
     while trys < 5:
         print(Style.RESET_ALL)
         random_multiplication1 = randint(1, 10)
@@ -30,11 +30,19 @@ def mult():
                 trys += 1
                 print(Fore.LIGHTBLUE_EX + "True answer:", true_answer)
         except ValueError:
-            print(Fore.RED + "you can only enter numbers there")
+            print(Fore.LIGHTRED_EX + "you can only enter numbers there.")
+            cheating += 1
         if trys == 5:
             print(Fore.BLUE + "your score:", score, "/", "5")
             percent = round((score / 5) * 100, 2)
             print(Fore.GREEN + str(percent) + "%")
+        elif cheating == 2:
+            time.sleep(2)
+            print(Fore.RED + "wait...")
+            time.sleep(3)
+            print(Fore.RED + "this cheating..")
+            time.sleep(6)
+            break
 print(Fore.CYAN + "math test!")
 while True:
     print(Style.RESET_ALL)
