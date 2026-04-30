@@ -38,7 +38,7 @@ def mult():
 print(Fore.CYAN + "math test!")
 while True:
     print(Style.RESET_ALL)
-    user_choice = input(Fore.LIGHTCYAN_EX + "to start, type 'start' (you can write 'tips' and it will give you the top 5 tips to learn multiplication): ")
+    user_choice = input(Fore.LIGHTCYAN_EX + "to start, type 'start' (you can write 'tips' and it will give you the top 5 tips to learn multiplication): ").strip().lower()
     if user_choice == "start":
         mult()
     elif user_choice == "tips":
