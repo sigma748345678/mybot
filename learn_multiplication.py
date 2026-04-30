@@ -121,9 +121,11 @@ def div():
         print(Style.RESET_ALL)
         random_div1 = randint(1, 10)
         random_div2 = randint(1, 10)
-        true_answer = random_div1 / random_div2
+        if random_div1 < random_div2:
+            random_div1, random_div2 = random_div2, random_div1
+        true_answer = round(random_div1 / random_div2)
         time.sleep(1)
-        print("what is", random_div2, "/", random_div1)
+        print("what is", random_div1, "/", random_div2)
         try:
             user_input = int(input("answer: "))
             if user_input == true_answer:
