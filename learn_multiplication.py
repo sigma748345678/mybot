@@ -166,3 +166,4 @@ while True:
         div()
     elif user_choice == "tips":
         print(Fore.RED + math_advice)
+# made ellychandr5654@gmail.com
