@@ -42,6 +42,15 @@ def mult():
             time.sleep(3)
             print(Fore.RED + "this cheating..")
             time.sleep(6)
+            print(Fore.MAGENTA + "RELOADING")
+            print(Style.RESET_ALL)
+            time.sleep(3)
+            print(Fore.RED +"|#  |")
+            time.sleep(3)
+            print(Fore.YELLOW + "|## |")
+            time.sleep(3)
+            print(Fore.GREEN +"|###|")
+            time.sleep(3)
             break
 print(Fore.CYAN + "math test!")
 while True:
