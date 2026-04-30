@@ -40,7 +40,9 @@ def mult():
         elif cheating == 2:
             time.sleep(2)
             print("dont cheat pls")
-            break
+            print(Fore.BLUE + "your score:", score, "/", "5")
+            percent = round((score / 5) * 100, 2)
+            break # this break just return in the main menu
 print(Fore.CYAN + "math test!")
 while True:
     print(Style.RESET_ALL)
