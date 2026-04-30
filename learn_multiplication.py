@@ -29,7 +29,7 @@ def mult():
                 print(Fore.RED + "False!")
                 trys += 1
                 print(Fore.LIGHTBLUE_EX + "True answer:", true_answer)
-        except:
+        except ValueError:
             print(Fore.RED + "you can only enter numbers there")
         if trys == 5:
             print(Fore.BLUE + "your score:", score, "/", "5")
