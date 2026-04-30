@@ -28,6 +28,7 @@ def mult():
             else:
                 print(Fore.RED + "False!")
                 trys += 1
+                print(Fore.LIGHTBLUE_EX + "True answer:", true_answer)
         except:
             print(Fore.RED + "you can only enter numbers there")
         if trys == 5:
