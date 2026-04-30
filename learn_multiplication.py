@@ -39,26 +39,7 @@ def mult():
             print(Fore.GREEN + str(percent) + "%")
         elif cheating == 2:
             time.sleep(2)
-            print(Fore.RED + "wait...")
-            time.sleep(3)
-            print(Fore.RED + "this cheating..")
-            print(Style.RESET_ALL)
-            time.sleep(3)
-            while wwww < 10:
-                wwww += 1
-                time.sleep(0.2)
-                err = randint(10000000000000, 10000000000000000000)
-                print(err)
-            time.sleep(4)
-            print(Fore.MAGENTA + "RELOADING")
-            print(Style.RESET_ALL)
-            time.sleep(3)
-            print(Fore.RED +"|#  |")
-            time.sleep(3)
-            print(Fore.YELLOW + "|## |")
-            time.sleep(3)
-            print(Fore.GREEN +"|###|")
-            time.sleep(3)
+            print("dont cheat pls")
             break
 print(Fore.CYAN + "math test!")
 while True:
