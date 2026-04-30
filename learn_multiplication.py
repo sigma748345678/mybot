@@ -12,7 +12,6 @@ def mult():
     score = 0
     trys = 0
     cheating = 0
-    wwww = 0
     while trys < 5:
         print(Style.RESET_ALL)
         random_multiplication1 = randint(1, 10)
@@ -34,14 +33,14 @@ def mult():
             print(Fore.LIGHTRED_EX + "you can only enter numbers there.")
             cheating += 1
         if trys == 5:
-            print(Fore.BLUE + "your score:", score, "/", "5")
+            print(Fore.BLUE + "your score:", score, "/", trys)
             percent = round((score / 5) * 100, 2)
             print(Fore.GREEN + str(percent) + "%")
         elif cheating == 2:
             time.sleep(2)
-            print("dont cheat pls")
-            print(Fore.BLUE + "your score:", score, "/", "5")
-            percent = round((score / 5) * 100, 2)
+            print(Fore.BLUE + "your score:", score, "/", trys)
+            percent_cheat = round((score / 5) * 100, 2)
+            print(Fore.GREEN + str(percent_cheat) + "%")
             break # this break just return in the main menu
 print(Fore.CYAN + "math test!")
 while True:
