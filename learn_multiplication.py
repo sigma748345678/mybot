@@ -12,7 +12,7 @@ def mult():
     score = 0
     trys = 0
     cheating = 0
-    while trys < 5:
+    while trys < 10:
         print(Style.RESET_ALL)
         random_multiplication1 = randint(1, 10)
         random_multiplication2 = randint(1, 10)
@@ -32,14 +32,14 @@ def mult():
         except ValueError:
             print(Fore.LIGHTRED_EX + "you can only enter numbers there.")
             cheating += 1
-        if trys == 5:
+        if trys == 10:
             print(Fore.BLUE + "your score:", score, "/", trys)
-            percent = round((score / 5) * 100, 2)
+            percent = round((score / trys) * 100, 2)
             print(Fore.GREEN + str(percent) + "%")
         elif cheating == 2:
             time.sleep(2)
             print(Fore.BLUE + "your score:", score, "/", trys)
-            percent_cheat = round((score / 5) * 100, 2)
+            percent_cheat = round((score / trys) * 100, 2)
             print(Fore.GREEN + str(percent_cheat) + "%")
             break # this break just return in the main menu
 
@@ -47,7 +47,7 @@ def addi():
     score = 0
     trys = 0
     cheating = 0
-    while trys < 5:
+    while trys < 10:
         print(Style.RESET_ALL)
         random_addion1 = randint(1, 10)
         random_addion2 = randint(1, 10)
@@ -67,14 +67,14 @@ def addi():
         except ValueError:
             print(Fore.LIGHTRED_EX + "you can only enter numbers there.")
             cheating += 1
-        if trys == 5:
+        if trys == 10:
             print(Fore.BLUE + "your score:", score, "/", trys)
-            percent = round((score / 5) * 100, 2)
+            percent = round((score / trys) * 100, 2)
             print(Fore.GREEN + str(percent) + "%")
         elif cheating == 2:
             time.sleep(2)
             print(Fore.BLUE + "your score:", score, "/", trys)
-            percent_cheat = round((score / 5) * 100, 2)
+            percent_cheat = round((score / trys) * 100, 2)
             print(Fore.GREEN + str(percent_cheat) + "%")
             break # this break just return in the main menu
 
@@ -82,7 +82,7 @@ def sub():
     score = 0
     trys = 0
     cheating = 0
-    while trys < 5:
+    while trys < 10:
         print(Style.RESET_ALL)
         random_sub1 = randint(1, 10)
         random_sub2 = randint(1, 10)
@@ -104,14 +104,14 @@ def sub():
         except ValueError:
             print(Fore.LIGHTRED_EX + "you can only enter numbers there.")
             cheating += 1
-        if trys == 5:
+        if trys == 10:
             print(Fore.BLUE + "your score:", score, "/", trys)
-            percent = round((score / 5) * 100, 2)
+            percent = round((score / trys) * 100, 2)
             print(Fore.GREEN + str(percent) + "%")
         elif cheating == 2:
             time.sleep(2)
             print(Fore.BLUE + "your score:", score, "/", trys)
-            percent_cheat = round((score / 5) * 100, 2)
+            percent_cheat = round((score / trys) * 100, 2)
             print(Fore.GREEN + str(percent_cheat) + "%")
             break # this break just return in the main menu
 
@@ -119,7 +119,7 @@ def div():
     score = 0
     trys = 0
     cheating = 0
-    while trys < 5:
+    while trys < 10:
         print(Style.RESET_ALL)
         random_div1 = randint(1, 10)
         random_div2 = randint(1, 10)
@@ -141,14 +141,14 @@ def div():
         except ValueError:
             print(Fore.LIGHTRED_EX + "you can only enter numbers there.")
             cheating += 1
-        if trys == 5:
+        if trys == 10:
             print(Fore.BLUE + "your score:", score, "/", trys)
-            percent = round((score / 5) * 100, 2)
+            percent = round((score / trys) * 100, 2)
             print(Fore.GREEN + str(percent) + "%")
         elif cheating == 2:
             time.sleep(2)
             print(Fore.BLUE + "your score:", score, "/", trys)
-            percent_cheat = round((score / 5) * 100, 2)
+            percent_cheat = round((score / trys) * 100, 2)
             print(Fore.GREEN + str(percent_cheat) + "%")
             break # this break just return in the main menu
 
